@@ -1,0 +1,78 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;200&family=Poppins:ital,wght@0,300;0,400;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy";
+  font-family: "Poppins", sans-serif;
+}
+body h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+a {
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+
+#main {
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+}
+#main .elem{
+  border-bottom: 1px solid #eeeeee49;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 10%;
+}
+#main .elem h1,i {
+  font-size: 6vw;
+  color: #eee;
+  font-weight: bolder;
+  padding: 0 20px;
+  position: relative;
+  z-index: 9;
+  mix-blend-mode: difference;
+
+}
+
+#main .elem img{
+  height:220px;
+  width:220px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
+  border: 5px dashed #eee;
+  position: absolute;
+  transition: all linear 0.2s;
+  animation: rotateCursor 6s linear infinite;
+  opacity: 0;
+}
+
+
+@keyframes rotateCursor {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
